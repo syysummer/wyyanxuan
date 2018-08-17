@@ -1,0 +1,150 @@
+.profileContainer{
+  width: 100%;
+  background-color: #eee;
+  height: 13.34rem;
+  text-align: center;
+  overflow: hidden;
+  &.logined{
+    background-color: #fff;
+  }
+  .logoImg{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    text-align: center;
+    background-image: url("../../assets/imgs/logo.png");
+    background-size: 2.2rem 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .personMsg{
+    display: flex;
+    width: 7.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .phone{
+      width: 86%;
+      height: 0.6rem;
+      text-align: left;
+      padding: 0.05rem;
+      border-bottom: 0.01rem solid #ddd;
+      line-height: 0.5rem;
+      input{
+        margin-left: 0.2rem;
+        height: 0.5rem;
+        width: 5rem;
+        line-height: 0.5rem;
+        vertical-align: middle;
+        outline: none;
+      }
+    }
+    .vertify{
+      width: 86%;
+      height: 0.6rem;
+      text-align: left;
+      padding: 0.4rem 0 0.1rem 0.1rem;
+      border-bottom: 0.01rem solid #ddd;
+      line-height:0.5rem;
+      position: relative;
+      input{
+        margin-left: 0.2rem;
+        height: 0.5rem;
+        width: 4rem;
+        line-height: 0.5rem;
+        vertical-align: middle;
+        outline: none;
+      }
+      span{
+        position:absolute;
+        right: 0.2rem;
+        top: 0.45rem;
+        width: 1.8rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding: 0.05rem;
+        border: 0.01rem solid #bdbdbd;
+        border-radius: 0.03rem;
+        color: #666;
+      }
+    }
+    .issue{
+      width: 86%;
+      margin-top: 0.2rem;
+      height: 0.6rem;
+      text-align: left;
+      padding: 0.05rem;
+      line-height: 0.5rem;
+      color: #666;
+      font-size: 0.26rem;
+      .promble{
+        margin-left: 0.2rem;
+      }
+      .right{
+        float: right;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  .login{
+    margin-top: 0.1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .iconfont{
+      font-size: 0.4rem;
+      margin-right: 0.1rem;
+    }
+    .phone{
+      width: 92%;
+      background-color: #b4282d;
+      color: #efefef;
+      height: 0.9rem;
+      font-size: 0.28rem;
+      vertical-align: middle;
+      border: none;
+    }
+    .mail{
+      width: 92%;
+      color: #b4282d;
+      height: 0.9rem;
+      border: 0.02rem solid #b4282d;
+      background-color: transparent;
+      margin-top: 0.35rem;
+      font-size: 0.28rem;
+      .icon-youxiang{
+        position: relative;
+        top: 0.05rem;
+      }
+    }
+    .phoneLogin{
+      width: 94%;
+      margin-top: 0.4rem;
+      font-size: 0.28rem;
+      .icon-jiantou2{
+        font-size: 0.26rem;
+        color: #888;
+      }
+    }
+  }
+.mediaFooter{
+    position: absolute;
+    bottom: 0.8rem;
+    width: 100%;
+    text-align: center;
+    span{
+      display: inline-block;
+      padding-right: 0.15rem;
+      padding-left: 0.15rem;
+      border-right: 0.02rem solid #888;
+      color: #888;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}
+
+
