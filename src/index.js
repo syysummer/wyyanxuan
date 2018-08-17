@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter,Route,Switch,Redirect} from "react-router-dom";
+import {HashRouter,Route,Switch,Redirect} from "react-router-dom";
 import {Provider} from "react-redux";
 
 import './mock/mockServer'
@@ -15,7 +15,7 @@ import UserCenter from "./containers/userCenter/UserCenter";
 
 ReactDOM.render(
   <Provider store={store}>
-   <BrowserRouter>
+   <HashRouter>
     <Switch>
       <Route path='/home' component={Main} />
       <Route path='/detail' component={Main} />
@@ -25,7 +25,7 @@ ReactDOM.render(
       <Route path='/usercenter' component={Main} />
       <Route component={InterPage} />
     </Switch>
-   </BrowserRouter>
+   </HashRouter>
   </Provider>
   , document.getElementById('app'));
 
